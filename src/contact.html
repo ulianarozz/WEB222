@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB222 Store</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <div class="top-nav-bar">
+      <div class="shelter1">
+        New Home - Find Your New Family Member
+        <a href="index.html"> <img src="/assignment-5/images/logo.jpg" class="logo" /> </a>
+        <a href="index.html">Home <i class="fa fa-home"></i></a>
+      </div>
+    </div>
+
+    <div class="container1">
+      <h2>Fill Your Information</h2>
+
+      <form id="fill-form" method="post" class="contact">
+        <div class="row-form">
+          <div class="col">
+            <label for="firstName"> First Name</label>
+            <input class="form-control1" id="firstName" name="firstName" type="text" required />
+          </div>
+        </div>
+        <div class="row-form">
+          <div class="col">
+            <label for="lastName"> Last Name</label>
+            <input class="form-control1" id="lastName" name="lastName" type="text" required />
+          </div>
+        </div>
+
+        <div class="row-form">
+          <div class="col">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              class="form-control1"
+              name="email"
+              type="email"
+              placeholder="email@email.com"
+              required
+            />
+          </div>
+        </div>
+        <div class="row-form">
+          <div class="col">
+            <label for="phone">Phone Number</label>
+            <input
+              id="phone"
+              class="form-control1"
+              name="phone"
+              type="tel"
+              title=" Please enter a valid number"
+              maxlength="20"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row-form">
+          <div class="col">
+            <label for="address"> Address</label>
+            <input id="address" class="form-control1" name="address" type="text" required />
+          </div>
+        </div>
+
+        <div class="row-form">
+          <div class="col">
+            <label for="city"> City</label>
+            <input id="city" class="form-control1" name="city" type="text" list="cities" required />
+            <datalist id="cities">
+              <option value="North York"> </option>
+              <option value="Toronto"> </option>
+              <option value="Oshawa"> </option>
+              <option value="Mississauga"> </option>
+              <option value="Vaughan"> </option>
+              <option value="Scarborough"> </option>
+              <option value="Markham"> </option>
+              <option value="Brampton"> </option>
+              <option value="Newmarket"> </option>
+            </datalist>
+          </div>
+
+          <div class="col">
+            <label for="postal-code"> Postal Code</label>
+            <input
+              id="postal-code"
+              class="form-control1"
+              name="postal-code"
+              type="text"
+              title=" Please enter the valid Zip-Code"
+              maxlength="8"
+              required
+            />
+          </div>
+        </div>
+
+        <label for="check">Call me! </label>
+        <input id="check" type="checkbox" />
+        <label for="check">Text me! </label>
+        <input id="check" type="checkbox" />
+
+        <div class="row">
+          <div class="col">
+            <label class="mr-3">Need help with: </label>
+
+            <div class="radio">
+              <input class="select" type="radio" name="help" id="help-question" value="question" />
+              <label class="issue" for="help-question">I want to adopt</label>
+            </div>
+            <div class="radio">
+              <input class="select" type="radio" name="help" value="comment" />
+              <label class="issue" for="help-question">I want to help</label>
+            </div>
+            <div class="radio">
+              <input class="select" type="radio" name="help" value="comment" />
+              <label class="issue" for="help-question">I found abandoned animal</label>
+            </div>
+            <div class="radio">
+              <input
+                class="select"
+                type="radio"
+                name="help"
+                id="help-problem"
+                value="orderProblem"
+              />
+              <label class="issue" for="help-question">Issues with adopted pet</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <label for="description">If you want to adopt just mention the name</label>
+            <textarea
+              id="description"
+              class="form-control1"
+              name="description"
+              rows="5"
+              placeholder="What happened?"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <input class="btn btn-primary" type="submit" name="submit" value="Submit" />
+          <input class="btn btn-primary" type="reset" name="reset" value="Reset" />
+        </div>
+        <input id="petId" name="petId" type="hidden" value="Uliana Rozzhyvaikina" />
+      </form>
+    </div>
+  </body>
+</html>
